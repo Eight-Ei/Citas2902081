@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="14.10" multi-file="no" uid="simpca90bbf944bf4cbca7d356eb17da0206" creation-date="02/23/2024 08:28:06">
+  <meta>
+    <name>diagrama</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>2</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>3</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>4</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-7c1d21cf1e4f4e1cbbb574f4f1a8ac64" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-a1f9ee7f045143a3a84d8e7d0b788f8c" name="" order-index="-1" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="pc66ca27067d64aa1975cac81d67c63d3_831571898" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>02/23/2024 08:28:06</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="pa0e5492d4df54a2790e7bfae70fbc8be_383506951" name="ClassDiagram1" order-index="1" uid="" auto-routed-paths="false" default-line-style="default">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>02/23/2024 08:28:06</creation-date>
+          <change-date>02/23/2024 08:33:44</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="29f892c5f4cf4c558cb6e24424585ac2" cid="C001" type="class" name="Medico" owner="5017ef6012bd4705aacde44549892bf8" creator="" creation-date="02/23/2024 08:30:56">
+            <owned-items />
+            <attributes>
+              <attribute id="ac9e104f77ab3499eaa1f89f4eb188eb7950" cid="PROP001" name="id" creation-date="02/23/2024 08:31:36" property-ref="39304b923a734c34ab95fad438546e84" />
+            </attributes>
+          </item>
+          <item id="dca2230b82474945a9f165f7888cad82" cid="C002" type="class" name="Medico" owner="5017ef6012bd4705aacde44549892bf8" creator="" creation-date="02/23/2024 08:33:44">
+            <owned-items />
+            <attributes>
+              <attribute id="a5c3b9f892ef44b8bb5163c7fe7133557680" cid="PROP002" name="id" creation-date="02/23/2024 08:33:51" property-ref="3c9f12d69aee4e39b02a42d35c0b2c0a" />
+            </attributes>
+            <operations>
+              <operation id="o3b581e52c1d341cb861e8148ea248023638" cid="OP002" name="GetId" creation-date="02/23/2024 08:42:38" type="" type-id="" visibility="public">
+                <stereotypes>
+                  <stereotype>getter</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="o50cb2140c22844eebafcbe07bd2d1249638" cid="OP003" name="SetId" creation-date="02/23/2024 08:42:38" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p25d2020e20724e2187a3a792f459fbee" name="id" type="" type-id="" creation-date="02/23/2024 08:42:38" />
+                </parameters>
+                <stereotypes>
+                  <stereotype>setter</stereotype>
+                </stereotypes>
+              </operation>
+            </operations>
+          </item>
+          <item id="5017ef6012bd4705aacde44549892bf8" cid="PKG001" type="package" name="entities" creator="" creation-date="02/23/2024 08:30:28">
+            <owned-items />
+          </item>
+          <item id="3c9f12d69aee4e39b02a42d35c0b2c0a" cid="PROP002" type="property" name="id" owner="dca2230b82474945a9f165f7888cad82" creator="" creation-date="02/23/2024 08:33:51" visibility="private" />
+          <item id="39304b923a734c34ab95fad438546e84" cid="PROP001" type="property" name="id" owner="29f892c5f4cf4c558cb6e24424585ac2" creator="" creation-date="02/23/2024 08:31:36" visibility="private">
+            <structural-feature multiplicity="*" />
+            <property aggregation="shared" />
+          </item>
+        </abstract-items>
+        <layer id="cb42855fac904190a3bb0b6a1ab775d6" name="Default" visible="true" enabled="true" locked="false">
+          <item id="5017ef6012bd4705aacde44549892bf8" iid="b7d10ac7ff2f4a219b131aeec600a828" creation-date="02/23/2024 08:30:28" order-index="0" type="entity">
+            <layout ax="305" ay="211" awidth="550" aheight="451" x="305" y="211" width="550" height="451" expanded="305,211,550,451" collapsed="0,0,0,0" />
+            <package name-in-body="false" />
+          </item>
+          <item id="dca2230b82474945a9f165f7888cad82" iid="cfc8f2921787452b8ec646ef0b0697df" container="5017ef6012bd4705aacde44549892bf8" container-iid="b7d10ac7ff2f4a219b131aeec600a828" show-fields="true" creation-date="02/23/2024 08:33:44" order-index="1" type="entity">
+            <layout ax="340" ay="278" awidth="140" aheight="160" x="340" y="278" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
