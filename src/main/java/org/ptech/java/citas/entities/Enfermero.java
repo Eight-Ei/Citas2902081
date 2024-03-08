@@ -26,5 +26,11 @@ public class Enfermero extends Usuario {
     public List<String> getProcedimientos() {
         return procedimientos;
     }
+
+    @Override
+    public String toString() {
+        return "Enfermero [procedimientos=" + procedimientos + "]";
+    }
+    
     
 }

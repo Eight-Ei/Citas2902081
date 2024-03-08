@@ -39,6 +39,11 @@ public class Consultorio {
         this.numero = numero;
     }
 
+    @Override
+    public String toString() {
+        return "Consultorio [id=" + id + ", direccion=" + direccion + ", numero=" + numero + "]";
+    }
+
     
 
 }

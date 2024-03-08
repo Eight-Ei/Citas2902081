@@ -61,9 +61,17 @@ public class Medico extends Usuario {
 
 
 
+
         public void setEspecialidad(Especialidad especialidad) {
             this.especialidad = especialidad;
         }
 
+
+
+
+        @Override
+        public String toString() {
+            return "Medico [registroMedico= " + registroMedico + ", especialidad= " + especialidad + "nombres= " + super.nombres + "]";
+        }
 
     }

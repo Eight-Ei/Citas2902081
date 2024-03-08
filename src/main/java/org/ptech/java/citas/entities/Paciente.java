@@ -110,6 +110,15 @@ import org.ptech.java.citas.entities.enums.TipoSangre;
             this.factorRH = factorRH;
         }
 
+
+        @Override
+        public String toString() {
+            return "Paciente [Id= " + super.id + "Nombre= " + super.nombres + "apellidos= " + super.apellidos + 
+            "Documento= " + super.tipoDocumento + "NumDocumento= " + super.numeroDocumento + "email= " + email + ", celular= " + celular + ", fechaNacimiento= " + fechaNacimiento
+                    + ", altura= " + altura + ", peso= " + peso + ", tipoSangre= " + tipoSangre + ", factorRH= " + factorRH
+                    + "]";
+        }
+
         
         
         
