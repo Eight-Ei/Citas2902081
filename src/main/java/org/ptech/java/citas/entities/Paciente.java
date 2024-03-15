@@ -25,7 +25,7 @@ import org.ptech.java.citas.entities.enums.TipoSangre;
                             Long celular,
                             LocalDate fechaNacimiento,
                             Double altura, 
-                            Double peso,
+                            double i,
                             TipoSangre tipoSangre, 
                             char factorRH) {
 
@@ -35,7 +35,7 @@ import org.ptech.java.citas.entities.enums.TipoSangre;
             this.celular = celular;
             this.fechaNacimiento = fechaNacimiento;
             this.altura = altura;
-            this.peso = peso;
+            this.peso = i;
             this.tipoSangre = tipoSangre;
             this.factorRH = factorRH;
         }

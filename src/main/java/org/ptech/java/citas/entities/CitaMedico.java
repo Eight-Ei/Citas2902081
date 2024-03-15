@@ -4,17 +4,30 @@ import java.time.LocalDateTime;
 
 import org.ptech.java.citas.citas.interfaces.IAgendable;
 import org.ptech.java.citas.entities.enums.EstadoCita;
+import org.ptech.java.citas.entities.enums.Motivo;
 
 public class CitaMedico extends Cita implements IAgendable {
 
     Medico medico;
     EstadoCita estado;
+    Motivo motivo;
+    
 
-
-    public CitaMedico(int id, LocalDateTime fecha,Paciente paciente, Consultorio consultorio) {
-        super(id, fecha, consultorio, paciente);
-        this.estado=EstadoCita.AGENDADA;
+    public CitaMedico(Medico medico, EstadoCita estado, Motivo motivo) {
+        this.medico = medico;
+        this.estado = estado;
+        this.motivo = motivo;
     }
+
+    public CitaMedico(int id, LocalDateTime fecha, Consultorio consultorio, Paciente paciente, Medico medico,
+            EstadoCita estado, Motivo motivo) {
+        super(id, fecha, consultorio, paciente);
+        this.medico = medico;
+        this.estado = estado;
+        this.motivo = motivo;
+    }
+
+    
 
     public Medico getMedico() {
         return medico;
@@ -32,7 +45,13 @@ public class CitaMedico extends Cita implements IAgendable {
         this.estado = estado;
     }
 
+    public Motivo getMotivo() {
+        return motivo;
+    }
 
+    public void setMotivo(Motivo motivo) {
+        this.motivo = motivo;
+    }
 
     @Override
     public boolean agendarCita(LocalDateTime fecha, Consultorio c) {

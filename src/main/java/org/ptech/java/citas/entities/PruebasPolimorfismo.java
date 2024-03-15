@@ -25,7 +25,7 @@ public class PruebasPolimorfismo {
                                      "lau@gmail.com", 
                                      3122234343L,  
                                      LocalDate.of(2024, Month.MARCH, 24), 
-                                     1.76, 58.5, 
+                                     1.76, 55, 
                                      TipoSangre.A, '+');
 
         System.out.println(p.toString());
